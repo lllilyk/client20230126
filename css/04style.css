@@ -1,0 +1,16 @@
+/* external css(외부 css) : css파일에 스타일 코드 작성 */
+/* css 주석은 html주석과 모양이 다름 방법은 ctrl+/로 같음 */
+
+/* 3개의 rule set(selector + declaration block)이 있음 */
+h1 {color:brown; 
+    background-color:bisque;
+}
+p {
+    color:rgb(45, 4, 83);
+    background-color: rgb(197, 245, 102);
+}
+
+h2{
+    color:rgb(143, 255, 255);
+    background-color: cornflowerblue;
+}
