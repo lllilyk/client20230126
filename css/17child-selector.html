@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        li{
+            text-decoration: underline;
+        }
+
+        /* > : 자식 선택자 */
+        /* li중에서도 ul안에 있는 li를 말하는 것 */
+        ul>li{
+            color:blue;
+        }
+        /* li를 선택할 건데 이 li의 부모가 todo클래스인 걸로! */
+        .todo>li {
+            background-color: bisque;
+        }
+        /* 부모요소가 note 클래스인 li요소들의 정렬을 오른쪽으로 하는 코드 */
+        .note>li{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- ul*2>li*3>lorem1 -->
+<ul class="todo">
+    <li>Lorem.</li>
+    <li>Sunt.</li>
+    <li>Ex.</li>
+</ul>
+<ul class="note">
+    <li>Lorem.</li>
+    <li>Perspiciatis.</li>
+    <li>Labore.</li>
+</ul>
+
+</body>
+</html>

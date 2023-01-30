@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            color : blue;
+        }
+        /* 인접형제선택자 */
+        /* p는 p인데 h1이랑 인접해 있는 p만 해당한다는 의미 */
+        h1 + p {
+            background-color: yellow;
+            color : coral;
+        }
+        /* p는 element 1개로 1점, h1+p는 element 2개로 2점이므로 coral 색이 적용됨 */
+    </style>
+</head>
+<body>
+    <!-- (h1>lorem1^p>lorem)*2+p>lorem -->
+    <h1>Lorem.</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto suscipit fugiat repudiandae iure quaerat, deleniti aut eum illo nobis eos quibusdam vitae dolorum velit nesciunt sequi autem. Alias, explicabo aperiam?</p>
+    <h1>Harum?</h1>
+    <p>Porro unde distinctio expedita, totam ut esse necessitatibus maiores inventore? Iure sunt provident veritatis, libero beatae dolorem molestias, expedita, quas magnam perferendis quibusdam blanditiis optio non necessitatibus iusto totam adipisci.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis fuga fugit! Autem, itaque, labore voluptatum corrupti suscipit, deserunt nesciunt quidem cum ullam expedita consequuntur laudantium eum a commodi ad!</p>
+</body>
+</html>

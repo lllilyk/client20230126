@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .sub>h1{
+            color : blue;
+        }
+        /* 자손 선택자 자식이 아니라 자손이어서 선택x*/ 
+        .container > h1 {
+            border : 5px dotted;
+        }
+        /* 자손인 경우에는 그냥 띄어쓰기 */
+        .container h1 {
+            border : 5px dotted;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .container>.sub>h1>lorem1 -->
+    <div class="container">
+        <!-- <h1>Lorem, ipsum.</h1>  -->
+        <!-- --------얘가 있으면 .container > h1 {이것도  가능 -->
+        <div class="sub">
+            <h1>Lorem.</h1>
+        </div>
+    </div>
+
+    <h1>Lorem, ipsum.</h1>
+</body>
+</html>

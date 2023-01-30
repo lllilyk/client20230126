@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            color:blue;
+        }
+        /* title 속성이 있는 요소들 */
+        /* attribute는 class와 동점이므로 10점 */
+        [title]{
+            text-decoration: underline;
+        }
+        /* title 속성이 있는 p요소들 */
+        /* attribute는 class와 동점이므로 10점 + element 1점= 11점 */
+        p[title]{
+            border : 5px solid;
+        }
+        /* title attribute가 있는 애들을 선택할건데 그 중에 조상이 h1인 애를 선택하겠다.  */
+        /* h1을 조상으로 둔 title속성이 있는 요소들 */
+        h1 [title]{
+            border : 5px dotted;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem, <span title="inside">ipsum</span>dolor.</h1>
+    <h1 title="hello">Lorem.</h1>
+    <h1 title="world">Enim.</h1>
+    <h1>Deserunt?</h1>
+    <h1>Eveniet.</h1>
+    <h1>Suscipit.</h1>
+
+    <p title="hi css">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aut porro officia quia dolore cumque aliquam doloribus inventore laudantium sit, dolores ut praesentium exercitationem voluptatem distinctio deserunt. Facere, odit ipsam.</p>
+    <p>Modi obcaecati sed quisquam ratione harum? Exercitationem autem animi ipsum, similique sapiente expedita illum eligendi beatae impedit. Repellat, ipsum odit dolor esse impedit optio sapiente. Tempore laudantium animi eligendi accusantium.</p>
+    <p>Rem adipisci tempora distinctio. Dolore, debitis iste nulla officiis vitae similique quidem nesciunt dicta aut in eligendi ad commodi ipsam perferendis nihil asperiores eum saepe reiciendis quos ab adipisci eaque?</p>
+
+</body>
+</html>

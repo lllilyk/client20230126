@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            color:blue;
+        }
+        p{
+            color:chocolate;
+        }
+        /* 선택자를 띄워쓰기 없이 연속 작성 */
+        /* 모든 조건을 만족하는 요소 선택 */
+        p.note{
+            background-color: yellowgreen;
+        }
+        p.error{
+            text-decoration: line-through;
+        }
+        /* p요소이고 error클래스이고 note 클래스인 즉, 모든 조건을 만족하는 */
+        p.error.note {
+            border: 5px solid;
+        }
+        .note.error{
+            border:10px dotted black;
+        }
+        /* <h1 class="note error">Labore, ea perspiciatis.</h1>이것만 오른쪽 정렬을 하고 싶을 때 */
+        /* 즉 h1요소이면서 error클래스인 것 */
+        /* h1.note.error도 괜찮음 */
+        h1.error{
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- h1.note*3>lorem3^p.note.error*3>lorem -->
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note">Cum, aliquid quas!</h1>
+    <h1 class="note error">Labore, ea perspiciatis.</h1>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae consequuntur culpa minus nemo quam libero et sit. Iste provident iusto in nihil ex vel corrupti reprehenderit quo quod harum.</p>
+    <p class="note error">Ratione eum rem architecto! Nihil cum dolores adipisci eligendi corrupti eum blanditiis, architecto temporibus quas veniam praesentium. Iste architecto porro alias nobis at nemo id quis, amet, cupiditate error temporibus?</p>
+    <p class="note error">Vero molestiae quisquam eius autem omnis consectetur ullam. Quod natus corrupti harum nemo quis in consectetur sequi error accusantium quidem, officiis iure voluptatum libero, nesciunt similique pariatur. Sapiente, unde accusantium!</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .error{
+            background-color: aqua;
+            color:blue;
+        }
+        /* note 클래스인 요소들의 배경색 노랑으로 만들기 */
+        .note{
+            background-color: yellow;
+        }
+        .delete{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <!-- class 속성은 영문, 숫자, _, - 조합으로 작성 -->
+    <!-- id와 유사하나, but class는 중복가능, id는 중복 불가 -->
+    <!-- 하나의 요소는 빈칸으로 구분해서 여러 클래스를 가질 수 있음 -->
+
+    <!-- h1*10>lorem2 -->
+    <h1 class="error">Lorem, ipsum.</h1>
+    <h1 class="note">Aspernatur, eaque!</h1>
+    <h1 class="error">Dolore, rem.</h1>
+    <h1 class="note">Animi, quos.</h1>
+    <h1 class="note">Consequatur, doloribus.</h1>
+    <h1 class="delete">A, aspernatur.</h1>
+    <h1 class="delete">Omnis, eius!</h1>
+    <!-- note class와 delete class 둘 다에 소속되어 있는 것 -->
+    <h1 class="note delete">Quos, in.</h1>
+    <h1 class="note delete">Obcaecati, explicabo.</h1>
+    <h1 class="error delete">Consectetur, accusamus.</h1>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #my head {
+            color : blue;
+        }
+
+        #myhead {
+            color : yellow;
+        }
+
+        #myHead {
+            color: blueviolet;  
+        }
+
+        #yourHead {
+            text-decoration : underline;
+        }
+
+        #3head {
+            text-align : right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 중복되지 않게 영문, 숫자, -,_만 사용 -->
+    <h1 id="my head">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead">Lorem, ipsum dolor.</h1>
+    <h1 id="myHead">Lorem, ipsum dolor.</h1>
+    <!-- 브라우저에 출력 될 수도 있으나 쓰면 안됨 -->
+    <h1 id="yourHead">Lorem, ipsum dolor.</h1>
+    <h1 id="yourHead">Lorem, ipsum dolor.</h1>
+    <!-- 숫자로 시작하면 출력 안됨 -->
+    <h1 id="3head">Lorem, ipsum dolor.</h1>
+
+    <!-- emmet : #이 곧 id 속성을 의미함 -->
+    <!-- h1#hishead -->
+    <h1 id="hishead"></h1>
+    <!-- h1#your-head -->
+    <h1 id="your-head"></h1>
+    <!-- h1#herhead>lorem3 -->
+    <h1 id="herhead">Lorem, ipsum dolor.</h1>
+
+    <!-- h1#head$*3 -->
+    <h1 id="head1"></h1>
+    <h1 id="head2"></h1>
+    <h1 id="head3"></h1>
+
+    <!-- h1#jackhead$*3>lorem3 -->
+    <h1 id="jackhead1">Lorem, ipsum dolor.</h1>
+    <h1 id="jackhead2">Ipsum, tenetur praesentium?</h1>
+    <h1 id="jackhead3">Facere, accusantium cum?</h1>
+</body>
+</html>
