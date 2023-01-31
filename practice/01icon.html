@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .click  {
+            display : flex;
+        }
+        .click > div {
+            background-color: rgb(252, 245, 237);
+            font-size: 30px;
+            font-weight:bold;
+            font-style:italic;
+            padding : 10px;
+            border : 10px solid rgb(255, 239, 245);
+            /* margin:5px; */
+            /* padding : 10px; */
+        }
+        .click > img {
+            width : 110px;
+            height: 70px;
+        }
+        .skii {
+            font-size: 80px;
+            color:dodgerblue;
+            background-color: rgb(223, 239, 255);
+            display : inline;
+            border : 5px dashed blue;
+        }
+        .box > div{
+            background-color: rgb(218, 219, 255);
+            border : 10px;
+            margin-top: 10px;
+            padding-top: 40px;
+            padding-bottom : 25px;
+            display : inline-block;
+            border-top : 10px inset rgb(106, 127, 248);
+            border-bottom: 5px outset gold;
+            border-left: 20px double orangered;
+            border-right: 3px dotted blueviolet;
+            font-weight: bold;
+            width : 110px;
+            height : 50px;
+            text-align : center;
+        }
+    </style>
+</head>
+<body>
+    <div class="click">
+        <img src="눈사람.jpeg" alt="">
+        <div>Network <i class="fa-solid fa-snowflake fa-flip" style="--fa-animation-duration: 3s;" ></i></div>
+        <div>Source <i class="fa-solid fa-snowman fa-circle-notch fa-spin"></i></div>
+        <div>Console <i class="fa-solid fa-person-skiing fa-beat" style="--fa-beat-scale: 2.0;"></i></div>
+        <div>Element <i class="fa-solid fa-igloo fa-bounce"></i></div>
+    </div>
+
+    <div class="skii">
+        <i class="fa-solid fa-person-skiing"></i>
+        <i class="fa-solid fa-person-skiing fa-rotate-90"></i>
+        <i class="fa-solid fa-person-skiing fa-rotate-180"></i>
+        <i class="fa-solid fa-person-skiing fa-rotate-270"></i>
+        <i class="fa-solid fa-person-skiing fa-rotate-both"></i>
+    </div>
+
+    <div class="box">
+        <div id="box1">snowflake1</div>
+        <div id="box2">snowflake2</div>
+        <div id="box3">snowflake3</div>
+        <div id="box4">snowflake4</div>
+        <div id="box5">snowflake5</div>
+    </div>
+</body>
+</html>
