@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 기본 div인 display : block일 때는 개발자가 원하는대로 설정이 잘 먹힘 */
+        div {
+            background-color: yellow;
+            border : 5px solid blue;
+            width : 100px;
+            height: 50px;
+            padding : 10px;
+            margin:20px;
+            /* 반면 display : inline은 width, height, padding, margin을 예상하기 힘듦 */
+            /* width,height,padding,margin을 개발자가 원하는대로 그리고 같은 줄에 배치하고 싶을 떄는 display : inline-block 을 써주면 된다. */
+            display : inline-block;
+
+        }
+        div:nth-child(even) {
+            border:5px solid coral;
+        }
+    </style>
+</head>
+<body>
+    <!-- #box$*5{box$} -->
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* box1과 2는 같지 않음 */
+        /* box sizing을 안하면 content크기(width와 height로)만 지정됨
+        box1은 content크기에 border 20px*2가 더 있는데 box2는 content만 있으므로 box1과 box2는 크기가 다르다. */
+        #box1{
+            background-color: yellow;
+            border : 20px solid green;
+            width:200px;
+            height:100px;
+        }
+        #box2{
+            background-color: brown;
+            width:200px;
+            height:100px;
+        }
+        /* content가 100px라는걸 알 수 있음 height 그대로이므로 */
+        #box3{
+            background-color: blue;
+            padding:20px;
+            border:10px solid gold;
+            height:100px;
+            width:50vw;
+        }
+        /* content가 몇인지 알 수 없음. */
+        #box4{
+            background-color: blue;
+            padding:20px;
+            border:10px solid chocolate;
+            height:100px;
+            width:50vw;
+            /* box3,4의 너비가 우리 눈으로 봤을때 절반이 아님 왜냐면 margin까지 포함해서 보여지는데 margin은 우리눈에 보이지 않음
+               그래서 box-sizing 사용 */
+            /* width, height가 border영역까지만 설정 */
+            box-sizing: border-box;
+            /* 대신 box-sizing을 쓰려면 content영역을 따로 계산해줘야함. 전체 height 100 - padding 20*2 - border 10 *2 = content 40*/
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- #box$*5{box$} -->
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+</body>
+</html>
