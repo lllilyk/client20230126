@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box{ width:300px; 
+            height:400px; 
+            background-color: yellow; 
+            /* 전체에서 중앙블럭으로 설정 */
+            margin:auto; 
+            /* text부분에서 중앙정렬 아마도 justify-content:center를 쓰면 text-align:center은 필요없는듯*/
+            text-align: center;
+            display : flex;
+            /* 좌우 중앙 */
+            justify-content: center;
+            /* 상하 중앙 */
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div style="width:500px; height:400px; background-color : skyblue;">
+        <div class = "box">
+            <span>
+            Lorem.
+            </span>
+        </div>
+    </div>
+</body>
+</html>

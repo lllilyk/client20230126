@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            display : flex;
+        }
+        .container2{
+            display : flex;
+            background-color: rgb(34, 34, 34);
+        }
+        .button{
+            background-color: rgb(255, 255, 255);
+            color:rgb(0, 0, 0);
+            height:45px;
+            padding : 16px 20px 5px 10px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: auto;
+        }
+        .menu{
+            background-color: rgb(34, 34, 34);
+            color:rgb(255, 255, 255);
+            height : 30px;
+            padding : 10px 15px 5px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+        }
+        .container > img {
+            width : 43px;
+            height: 43px;
+            padding : 10px 8px 15px;
+            margin-top: auto;
+            margin-bottom: auto;
+
+        }
+        .button:hover{
+            background-color: green;
+            color:rgb(255, 255, 255);
+        }
+        .menu:hover{
+            background-color: rgb(0, 0, 0);
+            color:white;
+        }
+        .mr-auto {
+            margin-right: auto;
+        }
+        .flexbox {
+            display: flex;
+        }
+
+        .main-content  {
+            flex : 1;
+        }
+  
+        .main-content-box {
+            font-family: 'Courier Prime', monospace;
+            font-size:15px;
+        }
+        .side-menu {
+            width: 250px;
+            background-color: rgb(226, 226, 226);
+        }
+        .side-menu-item:hover{
+            background-color: green;
+            color:white;
+        }
+        .side-menu-item{
+            padding:7px 5px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+/* ad부분은 값이 없기 때문에 style에서 설정해주지 않으면 화면에서 보이질 않음!!!! */
+        .ad-box {
+            width: 250px;
+            background-color: rgb(253, 172, 21);
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.button*7>lorem1 -->
+    <div class="container">
+        <!-- <div class="button">
+            Lorem.
+        </div> -->
+        <img src="W3Schools_logo.svg.png" alt="">
+        <div class="button">
+           Tutorials <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="button">
+            References <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="button">
+            Exercises <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="button mr-auto">
+            Sign Up
+        </div>
+            <div class="button" style="background-color:pink; margin:10px; height:30px;">
+                Nostrum
+            </div>
+            <div class="button" style="background-color:#fffbc0; margin:10px; height:30px;">
+                inse
+            </div>
+    </div>
+
+    <!-- .container>.menu*8>lorem1 -->
+    <div class="container2">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="menu">
+            HTML
+        </div>
+        <div class="menu">
+            CSS
+        </div>
+        <div class="menu">
+            JAVASCRIPT
+        </div>
+        <div class="menu">
+            SQL
+        </div>
+        <div class="menu mr-auto">
+            PYTHON
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-earth-asia"></i>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <!-- .content-container.flexbox>.side-menu>.side-menu-item*30>lorem1^^.main-content-box>(h1>lorem2^p>lorem)*10^.ad-box -->
+    <div class="content-container flexbox">
+        <div class="side-menu">
+            <div class="side-menu-item">
+                Lorem.
+            </div>
+            <div class="side-menu-item">
+                Sit.
+            </div>
+            <div class="side-menu-item">
+                Temporibus.
+            </div>
+            <div class="side-menu-item">
+                Iusto!
+            </div>
+            <div class="side-menu-item">
+                Quo!
+            </div>
+            <div class="side-menu-item">
+                Laboriosam.
+            </div>
+            <div class="side-menu-item">
+                Non!
+            </div>
+            <div class="side-menu-item">
+                Perferendis.
+            </div>
+            <div class="side-menu-item">
+                Vitae.
+            </div>
+            <div class="side-menu-item">
+                Asperiores!
+            </div>
+            <div class="side-menu-item">
+                Accusantium!
+            </div>
+            <div class="side-menu-item">
+                Officiis.
+            </div>
+            <div class="side-menu-item">
+                Cupiditate.
+            </div>
+            <div class="side-menu-item">
+                Nam!
+            </div>
+            <div class="side-menu-item">
+                Eum.
+            </div>
+            <div class="side-menu-item">
+                At.
+            </div>
+            <div class="side-menu-item">
+                Inventore?
+            </div>
+            <div class="side-menu-item">
+                Dignissimos?
+            </div>
+            <div class="side-menu-item">
+                Sed.
+            </div>
+            <div class="side-menu-item">
+                Saepe?
+            </div>
+            <div class="side-menu-item">
+                Minima.
+            </div>
+            <div class="side-menu-item">
+                Debitis.
+            </div>
+            <div class="side-menu-item">
+                At.
+            </div>
+            <div class="side-menu-item">
+                Quam!
+            </div>
+            <div class="side-menu-item">
+                Soluta!
+            </div>
+            <div class="side-menu-item">
+                Eum.
+            </div>
+            <div class="side-menu-item">
+                Dolorem.
+            </div>
+            <div class="side-menu-item">
+                Sapiente?
+            </div>
+            <div class="side-menu-item">
+                Necessitatibus?
+            </div>
+            <div class="side-menu-item">
+                Debitis!
+            </div>
+        </div>
+        <div class="main-content-box">
+            <h1>
+                Lorem, ipsum.
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit neque earum obcaecati commodi necessitatibus laboriosam, fuga officiis officia iste quam fugiat distinctio placeat ab molestias, voluptate velit. Porro, vitae.
+            </p>
+            <h1>
+                Voluptate, fuga. 
+            </h1>
+            <p>
+                Corrupti aut velit commodi sit voluptates nam et sunt harum, necessitatibus ipsa voluptatibus, explicabo illum itaque odit architecto temporibus, praesentium totam recusandae vel obcaecati. Officiis reprehenderit quibusdam molestiae distinctio quis!
+            </p>
+            <h1>
+                Eligendi, amet? 
+            </h1>
+            <p>
+                Excepturi esse aliquid alias laudantium non reiciendis, tempora tenetur magnam atque sit odio deleniti dignissimos amet architecto libero vel hic cumque porro assumenda a accusantium veritatis sint provident! Aliquid, tempora.
+            </p>
+            <h1>
+                Minus, nulla.
+            </h1>
+            <p>
+                Ad, quidem dolores quos sunt est fuga, adipisci placeat perspiciatis rerum natus nesciunt asperiores sit velit, modi iste cupiditate commodi tenetur recusandae repudiandae nam similique corrupti aperiam! Dolor, aut ipsa?
+            </p>
+            <h1>
+                Inventore, accusantium.
+            </h1>
+            <p>
+                Libero vel qui minus voluptatum architecto consequuntur autem ab natus, harum saepe in minima? Perspiciatis culpa ullam porro modi esse qui suscipit omnis. Earum iusto enim deserunt non unde ipsa!
+            </p>
+            <h1>
+                Sint, deleniti.
+            </h1>
+            <p>
+                Tenetur alias deleniti, itaque quia voluptate veniam voluptatum deserunt id totam consectetur aut facere vel voluptates maxime! Eius totam, magnam repellendus harum aliquam incidunt nobis? Facilis amet quia aliquid nam.
+            </p>
+            <h1>
+                Et, aut?
+            </h1>
+            <p>
+                Sequi sint possimus, ipsum earum sit sapiente quas quod ad quisquam quaerat laborum non maxime magnam voluptatem voluptate assumenda dignissimos ea labore numquam explicabo deserunt! Molestiae facere soluta modi blanditiis?
+            </p>
+            <h1>
+                Quam, suscipit?
+            </h1>
+            <p>
+                Libero consequatur voluptatum quos doloremque, sint magni laudantium porro! Fugiat dolores dicta odio nobis aperiam, praesentium explicabo. Iure dolores ex dolorum, soluta ea, commodi id consectetur omnis consequatur quam necessitatibus!
+            </p>
+            <h1>
+                Rem, quod!
+            </h1>
+            <p>
+                Libero atque ab labore quibusdam est dolorem eius rem, necessitatibus assumenda dolor porro aliquam quis modi aperiam deleniti! Officia est voluptates quo praesentium corrupti voluptas cupiditate aliquam qui! Sequi, error!
+            </p>
+            <h1>
+                Eligendi, culpa!
+            </h1>
+            <p>
+                Quaerat debitis nam, laudantium quas sed voluptate fugiat tenetur rem molestiae error aspernatur dignissimos? Debitis illo suscipit ea, quaerat, vel tenetur, laudantium corporis non quam fugiat rerum quidem dignissimos provident.
+            </p>
+        </div>
+        <div class="ad-box"></div>
+    </div>
+</body>
+</html>
+
+<!-- 57보고 hover 넣기 -->

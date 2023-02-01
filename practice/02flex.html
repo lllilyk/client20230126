@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item{
+            background-color: rgb(21, 153, 206);
+            height : 200px;
+        }
+        .item:nth-child(odd){
+            background-color: rgb(170, 240, 205);
+        }
+        .container {
+            display:flex;
+            background-color: rgb(247, 255, 218);
+            text-align: center;
+            align-items: center;
+            height:400px;
+        }
+
+/* flex만 기억하면됨 */
+/* flex shorthand*/
+        /* flex-grow flex-shrink flex-basis ; */
+        /* 띄어쓰기로 구분하고 flex-shrink는 필요없음! 마지막에 ; 까먹지말기! */
+        #item5{
+            flex:1
+        }
+        #item4{
+            flex:1 30%;
+            display : flex;
+            align-items: center;
+            justify-content: center;
+            /* align-items:center & justify-content:center 는 margin : auto와 같은 결과 */
+            /* 이 세가지 모두 display : flex;를 적용해야 쓸 수 있음 */
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item" id="item1">1</div>
+    <div class="item" id="item2">2</div>
+    <div class="item" id="item3">3</div>
+    <!-- 위에 <head<style>>내에서 #item4설정을 따로 주기!
+        display: flex부터 쭉 개별 설정적용
+        div내에서는 style을 적용하기 위해서 4를 <span></span>으로 묶기 -->
+    <div class="item" id="item4">
+        <span>4</span>
+    </div>
+
+    <div class="item" id="item5">5</div>
+</div>
+</body>
+</html>
