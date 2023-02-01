@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box {
+            background-color: chocolate;
+            display: flex;
+            width: 1500px;
+        }
+
+        .item {
+            background-color: aqua;
+            width: 200px;
+        }
+
+        .item:nth-child(odd) {
+            background-color: yellow;
+        }
+
+        #item1 {
+            flex-grow: 1;
+        }
+
+        #item2 {
+            flex-grow: 1;
+            /* auto로 두면 현재의 width를 따르겠다는 의미이므로 */
+            /* 지금처럼 설정한 경우에 item1과 2의 width는 450px */
+            flex-basis: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+    </div>
+</body>
+</html>

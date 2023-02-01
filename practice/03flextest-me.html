@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box {
+            background-color: chocolate;
+            display: flex;
+            width: 1500px;
+        }
+
+        .item {
+            background-color: aqua;
+            width: 200px;
+        }
+
+        .item:nth-child(odd) {
+            background-color: yellow;
+        }
+
+        #item1 {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        #item2 {
+            flex-grow: 1;
+        }
+
+        지금처럼 item1의 basis를 0으로 두면 기본으로 각각 갖는 200px의 너비도 갖지 않고 나누겠다는 의미로
+        item1은 350, item2는 550의 너비를 가지게 됨. 
+        왜냐면 전체 1500 중에서 200씩의 3개를 제외하면 총 900이고 
+        item2가 기본으로 가지고 있는 200을 제외하면 700
+        700을 2등분하면 350 
+        따라서 item1은 350, item2는 350+200=550
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+    </div>
+</body>
+</html>
