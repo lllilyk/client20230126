@@ -21,6 +21,7 @@
         .second-menu-item {
             background-color: black;
             color: white;
+
         }
         .second-menu-item:hover{
             background-color: rgb(235, 235, 235);
@@ -32,6 +33,10 @@
 
         .second-menu {
             background-color: black;
+            /* 부모요소에 sticky를 적용시켜야 bar전체가 다 움직임 */
+            position:sticky;
+            /* 0px을 줘야 맨 위에 붙어서 고정 */
+            top:0px;
         }
 
         /* 화면 비율에 맞춰서 변함 */
@@ -48,6 +53,7 @@
             width: 100px;
             background-color: green;
         }
+
     </style>
 </head>
 <body>
