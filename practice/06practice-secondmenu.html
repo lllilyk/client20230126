@@ -1,80 +1,111 @@
 <!-- https://www.lotteimall.com/custcenter/searchCustCenterMain.lotte?tlog=a1001_10 -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .top-menu{
-            display : flex;
-            position : relative;
+        .top-menu {
+            display: flex;
+            position: relative;
         }
-        button {
-            position :absolute;
-            left:172px;
+
+        input {
+            width: 340px;
+            height: 37px;
+            margin-top: auto;
+            margin-bottom: auto;
+            border-radius: 40px 40px;
+            border: 1px solid rgb(236, 1, 1);
         }
-        .top-menu > img {
-            display:flex;
+
+        .button {
+            position: absolute;
+            right: 422px;
+            top: 29px;
+            color: red;
+        }
+
+        .top-menu>img {
+            display: flex;
             margin: 10px;
-            padding:8px 2px;
-            width : 150px;
-            height : 60px;
+            padding: 8px 2px;
+            width: 150px;
+            height: 60px;
         }
+
         .down {
-            position : relative;
+            position: relative;
             font-size: 0.3em;
             bottom: -2.8em;
             right: 4.3em;
         }
-        .top-menu-item{
+
+        .top-menu-item {
             background-color: white;
-            color:black;
+            color: black;
             font-size: 20px;
-            margin-top:auto;
+            margin-top: auto;
             margin-bottom: auto;
-            margin-right: 0.5px;
+            margin-right: 0.1px;
         }
+
         .ml-auto {
             margin-left: auto;
         }
-       .sm{
-        display : flex;
-        border-top:1px solid rgb(230, 230, 230);
-        border-bottom:1px solid rgb(230, 230, 230);
-        height:48px;
-       }
-       .second-menu{
-        background-color: white;
-        color:black;
-        margin:10px;
-        padding:2px;
-        margin:auto;
-        font-size: 14px;
-        font-weight: bold;
-       }
-       .top-menu-item:hover{
-        color:red;
-       }
-       
-       .second-menu:hover{
-        color:red;
-       }
+
+        .sm {
+            display: flex;
+            border-top: 1px solid rgb(230, 230, 230);
+            border-bottom: 1px solid rgb(230, 230, 230);
+            height: 48px;
+            background-color: white;
+            position: sticky;
+            top: 0px;
+        }
+
+        .sm>img {
+            width: 51px;
+            height: 46px;
+            background-color: white;
+            border-left: 1px solid #e5e5e5;
+            border-right: 1px solid #e5e5e5;
+            margin: auto;
+            padding: 12px;
+        }
+
+        .second-menu {
+            background-color: white;
+            color: black;
+            margin: 10px;
+            padding: 2px;
+            margin: auto;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .top-menu-item:hover {
+            color: red;
+        }
+
+        .second-menu:hover {
+            color: red;
+        }
     </style>
 </head>
+
 <body>
     <!-- .top-menu>.top-menu-item*4>lorem1 -->
-    <div class="top-menu">
+    <div class="top-menu container">
         <img src="롯데홈쇼핑.jpg" alt="">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </form>
-            </div>
-          </nav>
+        <!-- input+button>i.fa-solid.fa-magnifying-glass -->
+        <input type="text">
+        <div class="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
         <div class="top-menu-item ml-auto">
             <p>
                 <i class="fa-solid fa-right-to-bracket"></i><span class="down">로그인</span>
@@ -82,26 +113,24 @@
         </div>
         <div class="top-menu-item">
             <p>
-            <i class="fa-solid fa-cart-shopping"></i><span class="down">장바구니</span>
+                <i class="fa-solid fa-cart-shopping"></i><span class="down">장바구니</span>
             </p>
         </div>
         <div class="top-menu-item">
             <p>
-            <i class="fa-solid fa-truck-fast"></i><span class="down">주문배송</span>
-            </p>    
+                <i class="fa-solid fa-truck-fast"></i><span class="down">주문배송</span>
+            </p>
         </div>
         <div class="top-menu-item">
             <p>
-            <i class="fa-solid fa-user"></i><span class="down">마이롯데</span>
+                <i class="fa-solid fa-user"></i><span class="down">마이롯데</span>
             </p>
         </div>
     </div>
 
     <!-- .second-menu>.second-menu.item*16>lorem1 -->
-    <div class="sm">
-        <div class="second-menu item">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+    <div class="sm container">
+        <img src="h_icon_menu.png" alt="">
         <div class="second-menu item">
             편성표
         </div>
@@ -147,4 +176,5 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>

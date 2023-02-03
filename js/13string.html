@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    // string 문자열
+    let a = "hello"; //따옴표로 문자열 표현
+    let b = "hello"; //작은 따옴표 가능
+
+    console.log(a,b);
+
+    let c = "I'm ironman"; //큰 따옴표 내에 작은 따옴표 작성가능
+    let d = 'i am "ironman"'; //작은 따옴표 내에 큰 따옴표 사용가능
+    console.log(c);
+    console.log(d);
+
+    // 큰 따옴표 안에 큰 따옴표를 작성하는 경우에는 큰따옴표 앞에 역슬래시 넣기
+    let e = "I am \"ironman\"";
+    console.log(e);
+
+    // 역슬래시(\)와 쓸 수 있는 특수문자
+    let f = 'I am \'ironman\''; //작은 따옴표
+    console.log(f);
+
+    // 역슬래시(\) + t : tab
+    let g = "I am \tironman"; 
+    console.log(g);
+
+    // 역슬래시(\) + n : 새로운 줄
+    let h = "I am \nironman";
+    console.log(h);
+
+    // 이렇게 해서는 줄바꿈 적용 안됨
+    let i 
+    = "I am ironman";
+    console.log(i);
+
+    // 역슬래시(\)자체를 출력하고 싶은 경우
+    let j = "abc\def"
+    console.log(j);
+    // 역슬래시 두번 넣으면 ok
+    let k = "abc\\def"
+    console.log(k);
+    
+
+
+</script>
+</body>
+</html>
