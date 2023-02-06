@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    // 피연산자의 타입(number, boolean, string 등)에 따라 다른 결과가 나올 수 있음
+        let a = 3;
+        let b = 5;
+        let c = 3*5;
+        console.log(c);
+
+        let d = "3";
+        let e = "5";
+        let f = d * e
+        console.log(f);
+
+        let g = d / e;
+        console.log(g);
+
+        let h = d - e;
+        console.log(h);
+
+        //+의 피연산자중 하나가 문자열(string)이면 '연결연산자'가 됨 아니면 산술연산자로 실행.
+        let i = d + e;
+        console.log(i); //string 값 "35"출력
+
+        let j = "3" + "5";
+        let k = "3" + 5;
+        let l = 3 + "5";
+        let m = 3 + 5;
+        console.log(j);
+        console.log(k);
+        console.log(l);
+        console.log(m);
+
+        let n = 3 + 5 + "2";
+        // (3 + 5)의 + 는 산술연산자
+        // (3 + 5 ) + "2"의 +는 연결연산자
+        // 따라서 답은 8 과 2이므로 82
+        
+        // 주의 
+        // let o = "3" + 5 + 2;
+        // 3과 5 이므로 35
+        // 이 35는 문자열 35이므로 문자 35 + 2 는 문자 352
+
+    </script>
+</body>
+</html>
