@@ -14,39 +14,27 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react";
+        
+        function sum(num) {
+            let total = 0; //앞으로 더할 값을 저장할 변수를 지정. 새로 지정한 변수 total에 sum값을 넣는것. 
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
+            for (let i = 1; i <= num; i++) {
+                total += i;
+            }
 
-        // array : 여러 값을 저장한 자료형
-        console.log("array 사용-----------------------");
-        let f = ["java", "css", "html", "vue", "react"];
-
-        // for (초기화코드, 조건, 조건변경코드)
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
+            return total;
         }
 
-        // 여러 값을 타입 구분없이 가질 수 있음
-        // 각 값을 item, element라고 함
-        let g = [3, "css", true, 3.14, null, undefined];
+        let sum10 = sum(10); // 1 ~ 10 합
+        let sum100 = sum(100); // 1 ~ 100 합
 
-        // 빈 배열
-        let h = [];
+        console.log("1~10의 합은 ", sum10);
+        console.log("1~100의 합은 ", sum100);
 
-        // 코드가 길면 각 값 앞에서 새로운 줄을 입력
-        let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다.",
-            "css는 html요소를 꾸며주는 코드다"];
+        //
+        console.log("practice");
+        console.log(sum(5));
+
     </script>
 </body>
 

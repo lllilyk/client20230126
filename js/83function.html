@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,45 +8,21 @@
     <style>
     </style>
 </head>
-
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react";
-
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
-
-        // array : 여러 값을 저장한 자료형
-        console.log("array 사용-----------------------");
-        let f = ["java", "css", "html", "vue", "react"];
-
-        // for (초기화코드, 조건, 조건변경코드)
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
-        }
-
-        // 여러 값을 타입 구분없이 가질 수 있음
-        // 각 값을 item, element라고 함
-        let g = [3, "css", true, 3.14, null, undefined];
-
-        // 빈 배열
-        let h = [];
-
-        // 코드가 길면 각 값 앞에서 새로운 줄을 입력
-        let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다.",
-            "css는 html요소를 꾸며주는 코드다"];
+    
+    // first-class function
+    // 변수에 할당 가능
+    function a(){
+        console.log("a라는 함수가 실행하는 코드들,,,");
+    }
+    let b;
+    b = a; //a라는 함수를 b에 할당한 것 뿐. a를 호출한 것이 아님. 
+    // a(); //이렇게 함수명 뒤에 둥근괄호를 적은 경우에만 호출
+    b(); //b가 a라는 함수를 할당받았기 때문에 b도 함수가 되어서 a()와 동일하게 호출 가능해짐. 
+    
     </script>
 </body>
-
 </html>
