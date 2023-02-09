@@ -9,27 +9,29 @@
     </style>
 </head>
 <body>
+    <!-- ul#list1>li*2>lorem1 -->
+    <ul id="list1">
+        <li>
+            Lorem.
+        </li>
+        <li>
+            Similique?
+        </li>
+    </ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    // method : 객체가 가진 함수
-    // 객체는 method와 property로 구성됨. 
-    let a = {
-        name : "kim",
-        age : 44,
-        drive : function(){
-            console.log("드라이브 함수 실행됨");
-        }
-    };
+        let text = "";
 
-    console.log(a.name);
-    console.log(a.age);
-    a.drive(); //a라는 객체가 가지고 있는 method가 실행됨. 
-    //name, age, drive는 object객체의 property name
-    //객체 a의 drive라는 propertyname을 호출하면 drive라는 property가 가지고 있는 함수가 호출됨
-    //age나 name은 함수를 가지고 있지 않기 때문에 메서드가 아님. 
-    //함수를 가지고 있는 drive만 메서드에 해당. 
+        //do 반복문
+        do {
+            text = prompt("새 목록을 작성하세요.", "study");
+            let li = document.createElement("li"); //li라는 요소를 만드는 것 자체를 li라는 변수에 담겠다 //요소를 추가할 때는 document.createElement("")형식
+            li.textContent = text; //li의 내용을 브라우저에 보이게하겠다. 
+
+            document.querySelector("#list1").append(li); //id가 list인 애에 li변수를 더하겠다. exit이라는 값과 다르면 계속. 
+        } while (text !== "exit");
+
     </script>
 </body>
 </html>

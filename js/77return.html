@@ -13,14 +13,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
 function a(param) {
-        console.log("어떤 일을 함");
+        console.log("1");
     }
 
     a(3);
     a(4);
 
     function b(param) {
-        console.log("비함수가 일함");
+        console.log("2");
 
         // 함수의 실행 결과
         // 결과값 return(반환)
@@ -29,13 +29,15 @@ function a(param) {
     b(5);
     b(6);
 
-    let r1 = a(); // 결과 없음
-    let r2 = b(); // 결과 있음 (return의 오른쪽값)
+    // 리턴값을 얻고 싶은 경우 변수에 담기
+    let r1 = a(); // 결과 없음 1
+    let r2 = b(); // 결과 있음 (return의 오른쪽값) 2
 
     console.log(r1); // undefined
-    console.log(r2);
-    console.log(b());
-    console.log(b);
+    console.log(r2); //어떤결과
+    console.log(b()); //2 어떤결과
+    console.log(b); //b함수 
+    //함수 실행 결과만 얻고싶을 때는 부여된 변수를 쓰고 콘솔 값도 얻고 싶은경우에는 함수호출코드를 직접사용. 
     </script>
 
     </script>

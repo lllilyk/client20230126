@@ -12,24 +12,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    //object : 값(property)과 기능(method)을 갖는 데이터 구조 
     
-    // method : 객체가 가진 함수
-    // 객체는 method와 property로 구성됨. 
-    let a = {
-        name : "kim",
-        age : 44,
+    let car = {
+        name : "kia", 
+        price : 5000,
         drive : function(){
-            console.log("드라이브 함수 실행됨");
-        }
-    };
+            console.log("운전기능 실행 중..");
+        } 
+    }
+    //객체명, 프로퍼티명
+    console.log(car.name);
+    console.log(car.price);
 
-    console.log(a.name);
-    console.log(a.age);
-    a.drive(); //a라는 객체가 가지고 있는 method가 실행됨. 
-    //name, age, drive는 object객체의 property name
-    //객체 a의 drive라는 propertyname을 호출하면 drive라는 property가 가지고 있는 함수가 호출됨
-    //age나 name은 함수를 가지고 있지 않기 때문에 메서드가 아님. 
-    //함수를 가지고 있는 drive만 메서드에 해당. 
+    car.name = "tesla"; //변경가능
+    console.log(car.name);
+
+    car.drive(); //메소드 실행
+
     </script>
 </body>
 </html>

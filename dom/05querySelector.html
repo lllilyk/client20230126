@@ -9,27 +9,35 @@
     </style>
 </head>
 <body>
-
+    <!-- h1#head$*3>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2" class="note">
+        Voluptatem!
+    </h1>
+    <h1 id="head3" class="note">
+        Ab?
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    // method : 객체가 가진 함수
-    // 객체는 method와 property로 구성됨. 
-    let a = {
-        name : "kim",
-        age : 44,
-        drive : function(){
-            console.log("드라이브 함수 실행됨");
-        }
-    };
+    let elem1 = document.querySelector("#head1");//선택자에 의해 선택한 element 값을 리턴해줌
+    console.log(elem1.textContent); 
 
-    console.log(a.name);
-    console.log(a.age);
-    a.drive(); //a라는 객체가 가지고 있는 method가 실행됨. 
-    //name, age, drive는 object객체의 property name
-    //객체 a의 drive라는 propertyname을 호출하면 drive라는 property가 가지고 있는 함수가 호출됨
-    //age나 name은 함수를 가지고 있지 않기 때문에 메서드가 아님. 
-    //함수를 가지고 있는 drive만 메서드에 해당. 
+    let elem2 = document.querySelector("#head2");
+    console.log(elem2.textContent);
+
+    let elem3 = document.querySelector(".note"); //class가 note인 element들 같은 클래스를 가진 여러 엘레멘트가 있으니까 근데 제일 먼저 발견되는 요소만 리턴함. 모두를 리턴하지 않음!!!
+    console.log(elem3.textContent);
+
+    //queryselector는 하나의 결과만 return
+    //queryselectorall은 모든 결과를 return
+
+
+
+    let elem4 = document.querySelector("h1"); //h1 중에서 가장 먼저 나오는 element 하나만 리턴함
+    console.log(elem4.id);
+
     </script>
 </body>
 </html>

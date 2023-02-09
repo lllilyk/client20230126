@@ -9,27 +9,36 @@
     </style>
 </head>
 <body>
-
+    <!-- h1*4#head$>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2" class="note">
+        Impedit.
+    </h1>
+    <h1 id="head3" class="note">
+        Quos?
+    </h1>
+    <h1 id="head4">
+        Illo.
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    // method : 객체가 가진 함수
-    // 객체는 method와 property로 구성됨. 
-    let a = {
-        name : "kim",
-        age : 44,
-        drive : function(){
-            console.log("드라이브 함수 실행됨");
-        }
-    };
 
-    console.log(a.name);
-    console.log(a.age);
-    a.drive(); //a라는 객체가 가지고 있는 method가 실행됨. 
-    //name, age, drive는 object객체의 property name
-    //객체 a의 drive라는 propertyname을 호출하면 drive라는 property가 가지고 있는 함수가 호출됨
-    //age나 name은 함수를 가지고 있지 않기 때문에 메서드가 아님. 
-    //함수를 가지고 있는 drive만 메서드에 해당. 
+   let heads = document.querySelectorAll("h1"); //여러값을 리턴하는 array로 받음
+   for(let i = 0; i < heads.length; i++){
+    console.log(heads[i].textContent);
+   }
+
+   //note클래스인 요소의 객체를 dom에서 가져와서 요소들의 textcontent property를 출력하기
+   //queryselectorall 메소드 사용해보기
+
+   //리턴값을 쓰고 싶으면 변수에 담는것 기억하기!
+   let notes = document.querySelectorAll(".note"); //css 문법 사용 selector 
+   for(let i = 0; i <notes.length; i++){
+    console.log(notes[i].textContent);
+   }
+   
     </script>
 </body>
 </html>

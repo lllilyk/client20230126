@@ -9,27 +9,38 @@
     </style>
 </head>
 <body>
-
+    <!-- h1#head$*3>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Quod?
+    </h1>
+    <h1 id="head3">
+        Perspiciatis.
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    // method : 객체가 가진 함수
-    // 객체는 method와 property로 구성됨. 
-    let a = {
-        name : "kim",
-        age : 44,
-        drive : function(){
-            console.log("드라이브 함수 실행됨");
-        }
-    };
+    let o1 = document.getElementById("head1");  //리턴하고 싶으면 변수 안에 담아서 쓰면 됨
+        //이렇게 함으로써 head1부분이 객체가 됨 (dom : document object medel이니까)
+    console.log(o1.textContent); //변수 o1이 담고있는 text를 콘솔에 출력해라
 
-    console.log(a.name);
-    console.log(a.age);
-    a.drive(); //a라는 객체가 가지고 있는 method가 실행됨. 
-    //name, age, drive는 object객체의 property name
-    //객체 a의 drive라는 propertyname을 호출하면 drive라는 property가 가지고 있는 함수가 호출됨
-    //age나 name은 함수를 가지고 있지 않기 때문에 메서드가 아님. 
-    //함수를 가지고 있는 drive만 메서드에 해당. 
+    o1.textContent = "HELLO DOM"; //DOM에 있는 객체의 PROPERTY를 변경 - 현재값도 변경됨.
+
+    o1.remove();
+
+    let o2 = document.getElementById("head2");
+    o2.textContent = "JAVASCRIPT"; 
+    
+    //아이디가 head3 요소의 텍스트콘텐트를 바꾸기 
+    let o3 = document.getElementById("head3");
+    o3.textContent = "BYE DOM"; 
+
+    //위의 두줄 코드와 동일한 코드
+    document.getElementById("head3").textContent = "BYE DOM"; 
+
+
+
     </script>
 </body>
 </html>

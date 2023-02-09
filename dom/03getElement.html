@@ -9,27 +9,33 @@
     </style>
 </head>
 <body>
+    <!-- h1#head$*3>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Harum!
+    </h1>
+    <h1 id="head3">
+        Quod.
+    </h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    // method : 객체가 가진 함수
-    // 객체는 method와 property로 구성됨. 
-    let a = {
-        name : "kim",
-        age : 44,
-        drive : function(){
-            console.log("드라이브 함수 실행됨");
-        }
-    };
+        let heads = document.getElementsByTagName("h1"); //h1태그로 작성된 값이 3개이므로 array로 리턴하는 것임
+        // console.log(heads[0].textContent);
+        // console.log(heads[1].textContent);
+        // console.log(heads[2].textContent);
 
-    console.log(a.name);
-    console.log(a.age);
-    a.drive(); //a라는 객체가 가지고 있는 method가 실행됨. 
-    //name, age, drive는 object객체의 property name
-    //객체 a의 drive라는 propertyname을 호출하면 drive라는 property가 가지고 있는 함수가 호출됨
-    //age나 name은 함수를 가지고 있지 않기 때문에 메서드가 아님. 
-    //함수를 가지고 있는 drive만 메서드에 해당. 
+        //반복해서 작성된 코드는 loop를 이용해도 됨
+        for ( let i = 0; i < heads.length; i++){
+            console.log(heads[i].textContent);
+        }
+
+        //변경도 가능
+        heads[2].textContent = "HI JAVASCRIPT";
+        heads[1].remove(); 
+
     </script>
 </body>
 </html>
