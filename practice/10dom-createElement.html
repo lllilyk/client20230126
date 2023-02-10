@@ -11,31 +11,27 @@
 </head>
 
 <body>
-    <!-- input#input1+ul#list1 [javascript]-->
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
-
-    <hr>
-
-    <!-- input#input2+ul#list2 [jquery]-->
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
+    <!-- ul#list1>li*2>lorem1 -->
+    <ul id="list1">
+        <li>
+            마음대로
+        </li>
+    </ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        //do while 반복문을 만드는데 내가 원하는 i'm okay가 나올때까지 프롬프트가 꺼지지 않도록. 그리고 입력한 값들이 브라우저에 순서대로 출력되도록. 
+        let place = "";
 
-        //보통의 자바스크립트 코드(vanila javascript)
-        document.querySelector("#input1").addEventListener("keyup", function (e) {
-            if (e.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
-                this.value = "";
-            }
-        });
+        do {
+            place = prompt("입력하면 나중에 나오는 느림보상자", "일단 입력해보게");
+            let hmm = document.createElement("li");
+            hmm.textContent = place;
 
-        //jquery($)
+            document.querySelector("#list1").append(hmm);
+        } while (place !== "i'm okay");
+
+
 
     </script>
 </body>

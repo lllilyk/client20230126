@@ -11,31 +11,32 @@
 </head>
 
 <body>
-    <!-- input#input1+ul#list1 [javascript]-->
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
 
-    <hr>
+    <input type="text" id="typingbox">
+    <button onclick="plus()">plus</button>
 
-    <!-- input#input2+ul#list2 [jquery]-->
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
+    <ul id="c">
+        <li>
+            Lorem.
+        </li>
+        <li>
+            Nesciunt.
+        </li>
+    </ul>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
 
-        //보통의 자바스크립트 코드(vanila javascript)
-        document.querySelector("#input1").addEventListener("keyup", function (e) {
-            if (e.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
-                this.value = "";
-            }
-        });
+        //input창에 원하는 내용을 쓰고 plus버튼을 누르면 브라우저에 출력되게 할 것. 입력한 값이 없어지지 않고 계속 추가로 출력될 것. 
+        function plus() {
+            let a = document.querySelector("#typingbox").value;
+            let b = document.createElement("li");
+            b.textContent = a;
 
-        //jquery($)
+            let c = document.querySelector("#c");
+            c.append(b);
+        }
 
     </script>
 </body>

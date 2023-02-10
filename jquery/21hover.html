@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,35 +8,38 @@
     <style>
     </style>
 </head>
-
 <body>
-    <!-- input#input1+ul#list1 [javascript]-->
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
+    <!-- button#button$*2{호버$} -->
+    <button id="button1">호버1</button>
+    <button id="button2">호버2</button>
+    <button id="button3">호버3</button>
 
-    <hr>
-
-    <!-- input#input2+ul#list2 [jquery]-->
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
-
+    <div id = "res"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-
-        //보통의 자바스크립트 코드(vanila javascript)
-        document.querySelector("#input1").addEventListener("keyup", function (e) {
-            if (e.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
-                this.value = "";
-            }
+        $("#button1").mouseenter(function(){
+            $("#res").text("1번 버튼에 포인터 들어감");
+        });
+        $("#button1").mouseleave(function(){
+            $("#res").text("1번 버튼에 포인터 떠남");
         });
 
-        //jquery($)
+
+        // .hover()는 mouseenter과 mouseleave 이벤트 둘 다를 수행할 수 있는 메서드. 때문에 이벤트를 두번 쓸 필요없이 hover하나로 묶어서 작성가능. 
+        $("#button2").hover(function(){
+            $("#res").text("2번 버튼에 포인터 들어감");
+        }, function(){
+            $("#res").text("2번 버튼에 포인터 떠남");
+        });
+
+        $("#button3").hover(function(){
+            $("#res").text("마우스엔터"); //css 문법에 맞게 id앞에 꼭 # 붙이는거 잊지말기!!!
+        }, function(){
+            $("#res").text("마우스아웃");
+        });
 
     </script>
-</body>
 
+</body>
 </html>

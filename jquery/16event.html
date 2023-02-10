@@ -11,31 +11,26 @@
 </head>
 
 <body>
-    <!-- input#input1+ul#list1 [javascript]-->
+    <!-- input#input1+ul#list1 -->
     <input type="text" id="input1">
     <ul id="list1"></ul>
-
-    <hr>
-
-    <!-- input#input2+ul#list2 [jquery]-->
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-
-        //보통의 자바스크립트 코드(vanila javascript)
-        document.querySelector("#input1").addEventListener("keyup", function (e) {
-            if (e.key === "Enter") {
+        $("#input1").on("keyup", function (event) { //enter를 누를 때만 이런일이 일어나게 하려고 function()에 event객체를 넣어주는 것!
+            if (event.key === "Enter") {
+                //새 li요소 만들고
                 let li = document.createElement("li");
+                //새 li요소에 input의 value를 textcontent로 추가
                 li.textContent = this.value;
+                //ul에 li요소 append
                 document.querySelector("#list1").append(li);
+
+                //input초기화
                 this.value = "";
             }
         });
-
-        //jquery($)
 
     </script>
 </body>

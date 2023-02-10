@@ -11,31 +11,33 @@
 </head>
 
 <body>
-    <!-- input#input1+ul#list1 [javascript]-->
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
-
-    <hr>
-
-    <!-- input#input2+ul#list2 [jquery]-->
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
-
+    <!-- h1>lorem1^p>lorem -->
+    <h1>
+        Lorem.
+    </h1>
+    <p style="display:none;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sit, ea, repudiandae optio excepturi commodi quo eius eligendi delectus maiores quisquam provident ipsa ipsam aperiam quas tempore atque dolores praesentium!
+    </p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        //h1요소에 마우스 포인터 들어가면 p요소가 보이게
+        //h1요소에서 마우스 포인터가 떠나면 p요소가 숨겨지게 
 
-        //보통의 자바스크립트 코드(vanila javascript)
-        document.querySelector("#input1").addEventListener("keyup", function (e) {
-            if (e.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
-                this.value = "";
-            }
+        $("h1").mouseenter(function () {
+            $("p").slideDown(fast);
         });
 
-        //jquery($)
+        $("h1").mouseleave(function () {
+            $("p").slideUp(fast);
+        });
+
+        // 이렇게 ,로 구분해서 한 번에 코드 작성 가능
+        $("h1").hover(function () {
+            $("p").slideDown("fast");
+        }, function () {
+            $("p").slideUp("fast");
+        });
 
     </script>
 </body>

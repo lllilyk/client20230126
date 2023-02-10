@@ -9,24 +9,17 @@
     </style>
 </head>
 <body>
+    
     <!-- h1#head1 -->
     <h1 id="head1"></h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let elem = document.querySelector("#head1"); //elem이라는 변수에 이 문서 내 id가 head1인 애를 담겠다. 
+   //프롬프트에 적는 내용을 화면에 출력시키기 
 
-    elem.append("hello"); //apend는 추가할 때 사용 즉 elem에 "hello"를 추가
-    elem.append("world"); 
-    elem.append("!"); 
-
-    elem.append("it", "is", "a", "dom"); // 컴마를 사용해서 한 번에 여러개 추가도 가능
-    elem.append("<span>hi</span>"); //새로운 element를 추가할 때는 아래와 같은 방법으로 해야함
-
-    let spanElem = document.createElement("span"); //spanelem에 새로 추가한 "span" element를 담겠다. <span></span>
-    spanElem.textContent = "새로운 스팬 요소"; // spanelem의 값을 브라우저에 보이게 할건데(textcontent) 그 내용을 "새로운 스팸 요소"라고 하겠다. 
-
-    elem.append(spanElem); // 새로만든 spanelem이라는 변수값도 브라우저에 보이게 하려면 head1에 담은 내용을 브라우저에서 보이게 해주는 변수인 elem에 추가해야함!
+   let show = prompt("무엇을 원하십니까", "지니");
+   let textbox = document.getElementById("head1");
+   textbox.textContent = show;
     </script>
 </body>
 </html>
