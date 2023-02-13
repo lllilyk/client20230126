@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    <!-- whichkey(event)의 event는 argument -->
+<input type="text" onkeyup = "whichKey(event)"> 
+<div id="res"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    // 함수 안의 whichkey(e)는 파라미터. argument를 실행시키기 위해서 파라미터명을 임의로 작성한 것. 
+    function whichKey(e){ //이벤트가 발생할때 이벤트 객체(e)가 생성됨
+        // console.log("키 입력됨");
+        console.log(event);//console에 자동으로 입력되니까 칠 필요가 없음
+        document.querySelector("#res").textContent = e.key; //key값은 키보드의 어떤 버튼을 눌렀을때 console의 key: 에서 확인가능. 
+    }
+
+    </script>
+</body>
+</html>

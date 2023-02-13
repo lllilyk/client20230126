@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <ul id="list1">
+        <li>
+            lorem.
+        </li>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            //jquery-16번파일
+            // $("#input1").keyup(function(e){
+            //     if (e.key === "Enter") {
+            //         let a = $("#input1");//직접 입력하는값이니까 val(); 넣어줘야 함!
+            //         let b = document.createElement("li");//이제 $배웠으니까 간단하게 쓰는 연습하기
+            //         document.querySelector("li") = a;
+            //         let c = $("#list1"); //아래까지 두줄은 맞기는 맞았음. 
+            //         c.append(a);
+            //     }
+            // })
+
+            $("#input1").keyup(function(e) {
+            if (e.key === "Enter") {
+                let content = $("#input1").val();
+                let liElem = $("<li></li>"); 
+                liElem.text(content);
+                $("#input1").val("");
+
+                $("#list1").append(liElem);
+            }
+        });
+    
+// [before] <tag> [prepend] content [append] <tag> [after]
+ 
+
+        </script>
+</body>
+
+</html>
