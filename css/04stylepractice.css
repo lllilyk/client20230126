@@ -1,0 +1,15 @@
+h1 {text-align: center;
+    color:black;
+    background-color: lightpink;
+}
+h2 {color:crimson;
+    background-color: lightgoldenrodyellow;
+}
+h3 {text-shadow: 1cm;
+    color:rgb(255, 255, 255);
+    background-color: hsl(249, 100%, 25%);
+}
+p {text-align:right;
+    color:darkgreen;
+    background-color: moccasin;
+}
